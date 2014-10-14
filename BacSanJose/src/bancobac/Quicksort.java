@@ -1,5 +1,3 @@
-package bancobac;
-
 /*
 Esta clase es una prueba para ordenar datos de tipo "int",
 HAY QUE IMPLEMENTARLA PARA "String"

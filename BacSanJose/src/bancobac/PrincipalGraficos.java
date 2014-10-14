@@ -1,6 +1,3 @@
-package bancobac;
-
-
 import javax.swing.*;
 
 /*
@@ -14,6 +11,10 @@ public class PrincipalGraficos extends JApplet {
     JTabbedPane pestañas;
     PastelGraficos pastelgrafico;
     BarraGraficos barragrafico;
+    
+    public PrincipalGraficos(){
+        init();
+    }
  
     @Override
     public void init(){

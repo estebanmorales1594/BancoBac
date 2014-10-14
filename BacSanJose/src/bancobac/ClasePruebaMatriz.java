@@ -1,5 +1,3 @@
-package bancobac;
-
 import javax.mail.MessagingException;
 
 /*

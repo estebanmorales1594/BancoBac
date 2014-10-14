@@ -1,5 +1,3 @@
-package bancobac;
-
 import java.awt.Font;
 import java.awt.Graphics;
 import java.security.Principal;

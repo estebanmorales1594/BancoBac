@@ -1,6 +1,3 @@
-
- package bancobac;
- 
  import java.util.logging.Level;
  import java.util.logging.Logger;
  import javax.mail.MessagingException;
@@ -25,6 +22,7 @@ En la ventana vamos a encontrar:
 */
  public class Interfaz extends javax.swing.JFrame {
      ColaClientesArray matriz=new ColaClientesArray();
+     PrincipalGraficos grafico;
      public Interfaz() {
          initComponents();
      }
@@ -234,7 +232,9 @@ En la ventana vamos a encontrar:
      }//GEN-LAST:event_AgregarButtonActionPerformed
  
      private void GraficosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GraficosButtonActionPerformed
- 
+
+        grafico = new PrincipalGraficos();
+        grafico.setVisible(true);
      }//GEN-LAST:event_GraficosButtonActionPerformed
  
      private void PasarACajasButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasarACajasButtonActionPerformed

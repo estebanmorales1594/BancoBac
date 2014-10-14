@@ -1,5 +1,3 @@
-package bancobac;
-
 /*
 Esta clase es una prueba de funciones(IGNORAR)
 */
@@ -11,7 +9,7 @@ public class Prueba {
         int n1=valor1.length();
         int n2=valor2.length();
         if (n1<n2){
-            return true true;
+            return true;
         }
         else{
             return false;
