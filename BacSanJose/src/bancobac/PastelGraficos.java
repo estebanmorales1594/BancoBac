@@ -1,3 +1,4 @@
+/*package BancoBac;
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -5,7 +6,8 @@ import java.awt.image.BufferedImage;
 import javax.swing.*;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.JFreeChart;
-import org.jfree.data.general.DefaultPieDataset;
+import orgjfree.data.general.DefaultPieDataset;
+
 
 /*
 Esta clase es para crear los graficos pastel, 
@@ -13,7 +15,7 @@ utilizando la libreria JFreeChart,
 va a extraer el tamaña de cada una de las listas colas, 
 dicha cantidad va a servir para realizar la grafica.
 */
-
+/*
 public class PastelGraficos extends JPanel {
     DefaultPieDataset porciones;
     JFreeChart pastel;
@@ -42,27 +44,27 @@ public class PastelGraficos extends JPanel {
                 con la cantidad total.... 
                 NADA MAS AGREGARLE A CADA UNO AL FINAL COMP
                 */
-                porciones.insertValue(0, "Personas Discapacitadas:", CantDisc/*Aqui va la cantidad de los clientes discapacitados*/);
-                porciones.insertValue(1, "Adulto Mayor:", CantAdultos/*Aqui va la cantidad de los clientes adulto mayor*/);
-                porciones.insertValue(2, "Mujeres Embarazadas:", CantEmb/*Aqui va la cantidad de las mujeres dicapacitadas*/);
-                porciones.insertValue(3, "Clientes Corporativos:", CantCorp/*Aqui va la cantidad de los clientes corporativos*/);
-                porciones.insertValue(4, "Clientes Regulares:", CantNormal/*Aqui va la cantidad de los clientes regulares*/);
-                BufferedImage graficopastel=pastel.createBufferedImage(450, 300);
-                ImageIcon img=new ImageIcon(graficopastel);
-                grafico.setIcon(img);
-            }
+                //porciones.insertValue(0, "Personas Discapacitadas:", CantDisc/*Aqui va la cantidad de los clientes discapacitados*/);
+               // porciones.insertValue(1, "Adulto Mayor:", CantAdultos/*Aqui va la cantidad de los clientes adulto mayor*/);
+               // porciones.insertValue(2, "Mujeres Embarazadas:", CantEmb/*Aqui va la cantidad de las mujeres dicapacitadas*/);
+               // porciones.insertValue(3, "Clientes Corporativos:", CantCorp/*Aqui va la cantidad de los clientes corporativos*/);
+              //  porciones.insertValue(4, "Clientes Regulares:", CantNormal/*Aqui va la cantidad de los clientes regulares*/);
+              //  BufferedImage graficopastel=pastel.createBufferedImage(450, 300);
+              //  ImageIcon img=new ImageIcon(graficopastel);
+              //  grafico.setIcon(img);
+          //  }
 
-        };
+        //};
 
-        boton.addActionListener(accion);
+       // boton.addActionListener(accion);
+//
+       // JPanel p=new JPanel();
+      //  p.add(boton);
 
-        JPanel p=new JPanel();
-        p.add(boton);
-
-        BufferedImage graficopastel=pastel.createBufferedImage(450, 300);
-        ImageIcon img=new ImageIcon(graficopastel);
-        grafico=new JLabel(img);
-        add(grafico);
-        add(p,BorderLayout.SOUTH);
-    }
-}
+      //  BufferedImage graficopastel=pastel.createBufferedImage(450, 300);
+       // ImageIcon img=new ImageIcon(graficopastel);
+       // grafico=new JLabel(img);
+       // add(grafico);
+      //  add(p,BorderLayout.SOUTH);
+  ///  }
+//}*/

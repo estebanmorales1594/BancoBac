@@ -1,4 +1,4 @@
-import java.awt.BorderLayout;
+/*import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
@@ -14,7 +14,7 @@ utilizando la libreria JFreeChart,
 va a extraer el tamaña de cada una de las listas colas, 
 dicha cantidad va a servir para realizar la grafica.
 */
-
+/*
 public class BarraGraficos extends JPanel {
     JFreeChart barra;
     DefaultCategoryDataset datos;
@@ -41,29 +41,33 @@ public class BarraGraficos extends JPanel {
                 con la cantidad total.... 
                 NADA MAS AGREGARLE A CADA UNO AL FINAL COMP
                 */
-                datos.setValue(CantDisc/*Aqui va la cantidad de los clientes discapacitados*/, "Personas Discapacitadas:", ""); 
-                datos.setValue(CantAdultos/*Aqui va la cantidad de los clientes adulto mayor*/, "Adulto Mayor:", "");
-                datos.setValue(CantEmb/*Aqui va la cantidad de las mujeres embarazadas*/, "Mujeres Embarazadas:", "");
-                datos.setValue(CantCorp/*Aqui va la cantidad de los clientes corporativos*/, "Clientes Corporativos:", "");
-                datos.setValue(CantNormal/*Aqui va la cantidad de los clientes regulares*/, "Clientes Regulares:", "");
-                BufferedImage pastelgrafico=barra.createBufferedImage(450, 300);
-                ImageIcon img=new ImageIcon(pastelgrafico);
-                grafico.setIcon(img);
-            }
+                //datos.setValue(CantDisc/*Aqui va la cantidad de los clientes discapacitados*/, "Personas Discapacitadas:", ""); 
+              ///  datos.setValue(CantAdultos/*Aqui va la cantidad de los clientes adulto mayor*/, "Adulto Mayor:", "");
+              //  datos.setValue(CantEmb/*Aqui va la cantidad de las mujeres embarazadas*/, "Mujeres Embarazadas:", "");
+               // datos.setValue(CantCorp/*Aqui va la cantidad de los clientes corporativos*/, "Clientes Corporativos:", "");
+              //  datos.setValue(CantNormal/*Aqui va la cantidad de los clientes regulares*/, "Clientes Regulares:", "");
+             //   BufferedImage pastelgrafico=barra.createBufferedImage(450, 300);
+              //  ImageIcon img=new ImageIcon(pastelgrafico);
+              //  grafico.setIcon(img);
+           // }
 
-        });
+      //  });
 
 
-        barra = ChartFactory.createBarChart3D("Sample Category Chart", "Quarters","Sales",datos,PlotOrientation.VERTICAL,true,true,true);
+       // barra = ChartFactory.createBarChart3D("Sample Category Chart", "Quarters","Sales",datos,PlotOrientation.VERTICAL,true,true,true);
 
-        BufferedImage pastelgrafico=barra.createBufferedImage(450, 300);
-        ImageIcon img=new ImageIcon(pastelgrafico);
-        grafico=new JLabel(img);
+      //  BufferedImage pastelgrafico=barra.createBufferedImage(450, 300);
+      //  ImageIcon img=new ImageIcon(pastelgrafico);
+      //  grafico=new JLabel(img);
+//
+       // JPanel p=new JPanel();
+       // p.add(boton);  
 
-        JPanel p=new JPanel();
-        p.add(boton);  
-
-        add(grafico);
-        add(p,BorderLayout.SOUTH);
-    }
-}
+      //  add(grafico);
+     //   add(p,BorderLayout.SOUTH);
+   // }
+  //  public static void main(String[] args){
+    //    BarraGraficos barra= new BarraGraficos();
+        
+  ///  }
+//}

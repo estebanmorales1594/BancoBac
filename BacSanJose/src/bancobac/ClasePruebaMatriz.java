@@ -21,30 +21,34 @@ public class ClasePruebaMatriz {
     public ClasePruebaMatriz() {
         this.size = 0;
         this.maxsize = MAX_SIZE;
-        this.arreglo = new String[100][3];
+        this.arreglo = new String[100][5];
         this.Envia = new EnviarCorreo();
         this.abc = 1;
 
     }
 
-    public void agregar(String cliente, String correo, String tipo) throws MessagingException {
+    public void agregar(String cliente, String correo, String tipo, String hora,String fecha) throws MessagingException {
 
         if (this.size < this.maxsize) {
             this.arreglo[this.size][0] = cliente;
             this.arreglo[this.size][1] = correo;
-            this.arreglo[this.size][2] = tipo;         
+            this.arreglo[this.size][2] = tipo;   
+            this.arreglo[this.size][3] = hora;   
+            this.arreglo[this.size][4] = fecha;   
             this.size++;
-            Envia.Enviador(correo, "Banco", "Sr(a). " + cliente + " usted ha sido agregado a nuestro sistema");
+            Envia.Enviador(correo, "Banco", "Sr(a). " + cliente + " usted ha sido agregado a nuestro sistema"+" , su turno le toca a las " +hora+" del dia "+fecha);
         }
         
     }        
     
     
-    public void agregarC(String cliente, String correo, String tipo) throws MessagingException{
+    public void agregarC(String cliente, String correo, String tipo,String hora,String fecha) throws MessagingException{
         if (this.size < this.maxsize) {
             this.arreglo[this.size][0] = cliente;
             this.arreglo[this.size][1] = correo;
             this.arreglo[this.size][2] = tipo;          
+             this.arreglo[this.size][3] = hora;   
+            this.arreglo[this.size][4] = fecha;   
             this.size++;
         }
     }
@@ -76,7 +80,7 @@ public class ClasePruebaMatriz {
 
 
 
-    public static void main(String[] args) throws Exception {
+    /*public static void main(String[] args) throws Exception {
            
         ClasePruebaMatriz cola = new ClasePruebaMatriz();
         
@@ -94,5 +98,5 @@ public class ClasePruebaMatriz {
         
         System.out.println(cola1);
      
-    }
+    }*/
 }
